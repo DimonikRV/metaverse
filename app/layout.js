@@ -1,12 +1,16 @@
-import '../styles/globals.css';
+import "../styles/globals.css";
+import { Oswald } from "next/font/google";
+
+const oswald = Oswald({ subsets: ["latin"] });
+
+export const metadata = {
+  title: "Metaversus",
+  description: "Choose your Metaverse",
+};
 
 const RootLayout = ({ children }) => (
   <html lang="en">
-    <head>
-      <link rel="preconnect" href="https://stijndv.com" />
-      <link rel="stylesheet" href="https://stijndv.com/fonts/Eudoxus-Sans.css" />
-    </head>
-    <body>{children}</body>
+    <body className={oswald.className}>{children}</body>
   </html>
 );
 
