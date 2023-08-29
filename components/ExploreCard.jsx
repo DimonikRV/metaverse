@@ -5,15 +5,7 @@ import Image from "next/image";
 import styles from "../styles";
 import { fadeIn } from "../utils/motion";
 
-const ExploreCard = ({
-  id,
-  imgUrl,
-  title,
-  active,
-  index,
-  style,
-  handleClick,
-}) => (
+const ExploreCard = ({ id, imgUrl, title, active, index, handleClick }) => (
   <motion.div
     variants={fadeIn("right", "spring", index * 0.5, 0.75)}
     className={`relative ${
