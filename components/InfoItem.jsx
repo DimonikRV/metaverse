@@ -1,11 +1,10 @@
 export const InfoItem = ({ col }) => {
   return (
-    <div className="flex flex-col ">
+    <div className='flex flex-col'>
       {col.map((item) => (
-        <button>
+        <button  key={item}>
           <p
-            key={item}
-            className=" text-left font-normal text-[16px] text-white"
+            className='text-left font-normal text-[16px] text-white'
           >
             {item}
           </p>
